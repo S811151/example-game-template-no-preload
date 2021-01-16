@@ -1,0 +1,41 @@
+.sceneRoot {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+
+    .message {
+      flex: 1;
+      white-space: pre-wrap;
+      overflow: auto;
+    }
+  }
+
+  .image {
+    object-fit: contain;
+  }
+
+  .optionWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+    min-height: 80px;
+    padding-top: 8px;
+  }
+
+  .option {
+    border: 1px solid #50514f;
+    border-radius: 6px;
+    padding: 8px;
+
+    &:hover {
+      background-color: #ffe066;
+      color: #333432;
+      cursor: pointer;
+    }
+  }
+}
